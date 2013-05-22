@@ -75,6 +75,8 @@ li.image-wrapper.grid {
 	}
 	li.image-wrapper.grid img {
 		margin-bottom: 1.5em;
+		width: 50%;
+		float: right;
 	}
 	/*li.image-wrapper:hover {
 		background: rgba(255,255,255,0.3);
