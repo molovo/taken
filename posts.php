@@ -1,4 +1,5 @@
 <?php theme_include('header'); ?>
+	<h1><?php echo current_url(); ?></h1>
 	<?php if (current_url() == 'blog'): ?>
 		<script type="text/javascript">
 			window.location.href = <?php echo base_url(); ?> + 'category/blogs';
