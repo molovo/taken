@@ -31,10 +31,10 @@
 	</section>
 	<?php if (current_url() == 'category/blogs'): ?>
 		<div class="grid 1of6 title ralign">
-			<h1><?php echo page_name(); ?></h1>
+			<h2><?php echo page_name(); ?></h2>
 		</div>
 	<?php else: ?>
 		<div class="grid 1of6 title ralign">
-			<h1>Portfolio</h1>
+			<h2><?php echo str_replace('category/', '', current_url()) ?></h2>
 		</div>
 	<?php endif; ?>

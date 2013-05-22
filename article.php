@@ -9,7 +9,7 @@
 		</section>
 
 		<section class="grid 1of6 title ralign">
-			<h1><?php echo article_title(); ?></h1>
+			<h2><?php echo article_title(); ?></h2>
 		</section>
 
 	<?php else: ?>

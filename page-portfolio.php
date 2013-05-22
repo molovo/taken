@@ -17,7 +17,7 @@
 		</ul>
 	</section>
 	<div class="grid 1of6 title ralign">
-		<h1><?php echo page_name(); ?></h1>
+		<h2><?php echo page_name(); ?></h2>
 	</div>
 
 <?php //theme_include('footer'); ?>
