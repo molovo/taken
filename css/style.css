@@ -26,6 +26,7 @@ nav#main a {
 	color: inherit;
 	letter-spacing: .025em;
 	text-decoration: none;
+	font-weight: 300;
 }
 	nav#main a.active {
 		font-weight: 700;
