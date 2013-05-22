@@ -19,9 +19,13 @@
 					</li>
 				<?php else: ?>
 					<li class="grid 1of2 image-wrapper">
-						<h3><?php echo article_title(); ?></h3>
-						<a href="<?php echo article_url(); ?>" class="button">View</a>
-						<img class="grid 1of1 remove-padding" src="<?php echo article_custom_field('image'); ?>" alt="<?php echo article_title(); ?>" />
+						<a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>">
+							<div class="grid 1of1 remove-padding img-container">
+								<div class="grid 1of1 remove-padding img" style="background: url('<?php echo article_custom_field("image"); ?>') center no-repeat; background-size: cover"></div>
+								<span href="<?php echo article_url(); ?>" class="button">View</span>
+							</div>
+							<h3><?php echo article_title(); ?></h3>
+						</a>
 					</li>
 				<?php endif; ?>
 				<?php endwhile; ?>
