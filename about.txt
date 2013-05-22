@@ -1,0 +1,5 @@
+Theme name:    Taken
+Description:   A photography portfolio theme. For Anchor CMS.
+Author name:   James Dinsdale
+Author site:   http://molovo.co.uk
+License:       http://licence.visualidiot.com

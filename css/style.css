@@ -1,0 +1,70 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+a, a:visited {
+	text-decoration: none;
+	font-weight: 700;
+	color: rgb(205,205,255);
+}
+a:hover {
+	text-decoration: underline;
+}
+
+main, aside.image {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	/*padding: 3em;*/
+}
+
+nav#main a {
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	text-transform: uppercase;
+	color: inherit;
+	letter-spacing: .025em;
+	text-decoration: none;
+}
+	nav#main a.active {
+		font-weight: 700;
+		text-decoration: underline;
+	}
+
+.container {
+	height: 100%;
+}
+
+section.page-content, section.posts {
+	height: 100%;
+	overflow-y: auto;
+	position: relative;
+}
+
+.logo {
+	max-width: 150px;
+}
+
+a.button {
+	padding: .75em 1.5em;
+	font-size: .75em;
+	font-family: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	border-radius: .25em;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	border: 3px solid white;
+}
+
+li.image-wrapper.grid {
+	padding: 0 1.5em;
+	margin-bottom: 3em;
+}
+	li.image-wrapper.grid img {
+		margin-bottom: 1.5em;
+	}
