@@ -19,22 +19,21 @@
 					</li>
 				<?php else: ?>
 					<li class="grid 1of2 image-wrapper">
-						<a href="<?php echo article_url(); ?>">
-							<img class="grid 1of1 remove-padding" src="<?php echo article_custom_field('image'); ?>" alt="<?php echo article_title(); ?>" />
-							<h3><?php echo article_title(); ?></h3>
-						</a>
+						<img class="grid 1of1 remove-padding" src="<?php echo article_custom_field('image'); ?>" alt="<?php echo article_title(); ?>" />
+						<h3><?php echo article_title(); ?></h3>
+						<a href="<?php echo article_url(); ?>" class="button">View</a>
 					</li>
 				<?php endif; ?>
 				<?php endwhile; ?>
 			</ul>
 		<?php endif; ?>
 	</section>
-	<?php if (current_url() == 'category/blogs'): ?>
+	<?php /*if (current_url() == 'category/blogs'): ?>
 		<div class="grid 1of6 title ralign">
 			<h2><?php echo page_name(); ?></h2>
 		</div>
-	<?php else: ?>
+	<?php else: */?>
 		<div class="grid 1of6 title ralign">
 			<h2><?php echo ucwords(str_replace('category/', '', current_url())) ?></h2>
 		</div>
-	<?php endif; ?>
+	<?php //endif; ?>

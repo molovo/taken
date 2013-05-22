@@ -67,7 +67,7 @@ a.button {
 
 li.image-wrapper.grid {
 	padding: 1.5em 1.5em 0;
-	margin-bottom: 3em;
+	margin-bottom: 1.5em;
 	border-radius: .25em;
 }
 	li.image-wrapper a {
@@ -76,9 +76,9 @@ li.image-wrapper.grid {
 	li.image-wrapper.grid img {
 		margin-bottom: 1.5em;
 	}
-	li.image-wrapper:hover {
+	/*li.image-wrapper:hover {
 		background: rgba(255,255,255,0.3);
-	}
+	}*/
 
 .title.grid {
 	padding: 1.5em 0;
