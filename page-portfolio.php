@@ -16,7 +16,7 @@
 			<?php endwhile; ?>
 		</ul>
 	</section>
-	<div class="grid 1of6">
+	<div class="grid 1of6 title ralign">
 		<h1><?php echo page_name(); ?></h1>
 	</div>
 

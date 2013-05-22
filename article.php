@@ -8,7 +8,7 @@
 			</article>
 		</section>
 
-		<section class="grid 1of6 article-title">
+		<section class="grid 1of6 title ralign">
 			<h1><?php echo article_title(); ?></h1>
 		</section>
 

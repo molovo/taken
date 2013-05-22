@@ -111,7 +111,9 @@
 		<main role="main">
 			<div class="container">
 				<div class="grid 2of6 remove-padding logo-nav-wrapper" style="letter-spacing: -.4em">
-					<img src="<?php echo theme_url('img/logo-white.png'); ?>" alt="Logo" class="grid 1of2 logo" />
+					<a href="<?php echo base_url(); ?>">
+						<img src="<?php echo theme_url('img/logo-white.png'); ?>" alt="Logo" class="grid 1of2 logo" />
+					</a>
 
 					<?php if(has_menu_items()): ?>
 						<nav class="grid 1of2" id="main">
