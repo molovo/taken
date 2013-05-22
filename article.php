@@ -14,7 +14,7 @@
 
 	<?php else: ?>
 
-		<section class="grid 1of1 content" id="article-<?php echo article_id(); ?>">
+		<section class="grid 5of6 article-content" id="article-<?php echo article_id(); ?>">
 			<h1><?php echo article_title(); ?></h1>
 
 			<article>
@@ -26,6 +26,7 @@
 				<p>This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_markdown()); ?> words long<?php if(comments_open()): ?>, and it’s got <?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> for now.<?php endif; ?> <?php echo article_custom_field('attribution'); ?></p>
 			</section>
 		</section>
+
 	<?php endif ?>
 
 <?php //theme_include('footer'); ?>

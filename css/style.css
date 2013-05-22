@@ -32,12 +32,15 @@ nav#main a {
 		font-weight: 700;
 		text-decoration: underline;
 	}
+	nav#main a:hover {
+		text-decoration: underline;
+	}
 
 .container {
 	height: 100%;
 }
 
-section.page-content, section.posts {
+section.page-content, section.posts, section.article-content {
 	height: 100%;
 	overflow-y: auto;
 	position: relative;

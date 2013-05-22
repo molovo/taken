@@ -53,18 +53,17 @@
 					overflow-y: auto;
 					width: 75%;
 				}
-				<?php if (!is_article()): ?>
-					.logo-nav-wrapper.grid {
-						width: 16.6667%;
+
+				.logo-nav-wrapper.grid {
+					width: 16.6667%;
+				}
+					.logo-nav-wrapper .logo.grid,
+					.logo-nav-wrapper nav.grid {
+						width: 100%;
 					}
-						.logo-nav-wrapper .logo.grid,
-						.logo-nav-wrapper nav.grid {
-							width: 100%;
-						}
-						.logo-nav-wrapper + section.grid {
-							width: 66.6667%;
-						}
-				<?php endif; ?>
+					.logo-nav-wrapper + section.grid:not(.article-content) {
+						width: 66.6667%;
+					}
 
 				aside.image {
 					background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
@@ -72,14 +71,6 @@
 					float: right;
 					width: 25%;
 				}
-
-				<?php if (is_article() && article_category() == 'Blogs'): ?>
-					@media (min-width: 960px) {
-						main, aside.image {
-							width: 50%;
-						}
-					}
-				<?php endif; ?>
 			</style>
 		<?php else: ?>
 			<style>
