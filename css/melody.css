@@ -4,7 +4,7 @@
 
 /* Fonts and Ting
 ================================================== */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|Neuton:200,300,400,700,800,400italic|Raleway:400,900,100,200,300,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Neuton:200,300,400,700,800,400italic|Raleway:400,900,100,200,300,500,600,700,800|Volkhov:400,700,400italic,700italic|Quando);
 
 /* First, reset some default styles.
 ================================================== */
@@ -55,7 +55,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", "Raleway", "Helvetica", "Arial", sans-serif;
 }
 h1, h2 {
   font-weight: 100;
