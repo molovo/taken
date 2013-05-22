@@ -53,6 +53,18 @@
 					overflow-y: auto;
 					width: 75%;
 				}
+				<?php if (!is_article()): ?>
+					.logo-nav-wrapper.grid {
+						width: 16.6667%;
+					}
+						.logo-nav-wrapper .logo.grid,
+						.logo-nav-wrapper nav.grid {
+							width: 100%;
+						}
+						.logo-nav-wrapper + section.grid {
+							width: 66.6667%;
+						}
+				<?php endif; ?>
 
 				aside.image {
 					background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
@@ -98,39 +110,41 @@
 		</aside>
 		<main role="main">
 			<div class="container">
-				<img src="<?php echo theme_url('img/logo-white.png'); ?>" alt="Logo" class="grid 1of6 logo" />
+				<div class="grid 2of6 remove-padding logo-nav-wrapper" style="letter-spacing: -.4em">
+					<img src="<?php echo theme_url('img/logo-white.png'); ?>" alt="Logo" class="grid 1of2 logo" />
 
-				<?php if(has_menu_items()): ?>
-					<nav class="grid 1of6" id="main">
-						<ul>
-							<?php while(menu_items()): ?>
-								<li>
-									<a href="<?php echo menu_url(); ?>" <?php echo (
-										menu_url() == base_url() . current_url()
-										 || (
-											 	(
-											 		(is_article()
-											 		 && category_title() == 'Blogs')
-													 || strstr(current_url(), 'category/blogs')
+					<?php if(has_menu_items()): ?>
+						<nav class="grid 1of2" id="main">
+							<ul>
+								<?php while(menu_items()): ?>
+									<li>
+										<a href="<?php echo menu_url(); ?>" <?php echo (
+											menu_url() == base_url() . current_url()
+											 || (
+												 	(
+												 		(is_article()
+												 		 && category_title() == 'Blogs')
+														 || strstr(current_url(), 'category/blogs')
+													)
+													 && menu_name() == 'Blog'
 												)
-												 && menu_name() == 'Blog'
-											)
-										 || (
-										 		(
-										 			(
-											 			is_article() &&
-											 			category_title() !== 'Blogs'
-											 		)
-											 		|| (
-											 			strstr(current_url(), 'category')
-											 			 && !strstr(current_url(), 'category/blogs')
-											 		)
+											 || (
+											 		(
+											 			(
+												 			is_article() &&
+												 			category_title() !== 'Blogs'
+												 		)
+												 		|| (
+												 			strstr(current_url(), 'category')
+												 			 && !strstr(current_url(), 'category/blogs')
+												 		)
+												 	)
+											 	 	 && menu_name() == 'Portfolio'
 											 	)
-										 	 	 && menu_name() == 'Portfolio'
-										 	)
-									 	 ? 'class="active"' : ''); ?> title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
-								</li>
-							<?php endwhile; ?>
-						</ul>
-					</nav>
-				<?php endif; ?>
+										 	 ? 'class="active"' : ''); ?> title="<?php echo menu_title(); ?>"><?php echo menu_name(); ?></a>
+									</li>
+								<?php endwhile; ?>
+							</ul>
+						</nav>
+					<?php endif; ?>
+				</div>
