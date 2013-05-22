@@ -35,6 +35,6 @@
 		</div>
 	<?php else: ?>
 		<div class="grid 1of6 title ralign">
-			<h2><?php echo str_replace('category/', '', current_url()) ?></h2>
+			<h2><?php echo ucwords(str_replace('category/', '', current_url())) ?></h2>
 		</div>
 	<?php endif; ?>
