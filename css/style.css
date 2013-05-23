@@ -69,6 +69,7 @@ section.page-content, section.posts, section.article-content {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 	border: 3px solid white;
+	white-space: nowrap;
 }
 
 li.image-wrapper.grid {
