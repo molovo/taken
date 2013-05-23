@@ -3,13 +3,10 @@
 	<?php if (article_category() !== 'Blogs'): ?>
 
 		<section class="grid 3of6 article-content">
+			<h2><?php echo article_title(); ?></h2>
 			<article>
 				<?php echo article_markdown(); ?>
 			</article>
-		</section>
-
-		<section class="grid 1of6 title ralign">
-			<h2><?php echo article_title(); ?></h2>
 		</section>
 
 	<?php else: ?>

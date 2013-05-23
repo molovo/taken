@@ -38,60 +38,75 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
+		<style>
+			aside.image {
+				background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
+				background-size: cover;
+			}
+		</style>
+
 		<?php if (current_url() == 'blog' || strstr(current_url(), 'category') || page_slug() == 'portfolio' || (is_article() && article_category() == 'Blogs')): ?>
 			<style>
-				main, aside.image {
-					height: 100%;
-				}
-				main {
-					background: rgb(60,60,60);
-
-					box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
-					z-index: 999;
-					padding: 1.5em 0;
-					float: left;
-					overflow-y: auto;
-					width: 75%;
-				}
-
-				.logo-nav-wrapper.grid {
-					width: 16.6667%;
-				}
-					.logo-nav-wrapper .logo.grid,
-					.logo-nav-wrapper nav.grid {
-						width: 100%;
+				@media (min-width: 701px) {
+					main, aside.image {
+						height: 100%;
 					}
-					.logo-nav-wrapper + section.grid:not(.article-content) {
-						width: 66.6667%;
+					main {
+						box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+						padding: 1.5em 0;
+						float: left;
+						overflow-y: auto;
+						width: 75%;
 					}
 
-				aside.image {
-					background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
-					background-size: cover;
-					float: right;
-					width: 25%;
+					.logo-nav-wrapper.grid {
+						width: 16.6667%;
+					}
+						.logo-nav-wrapper .logo.grid,
+						.logo-nav-wrapper nav.grid {
+							width: 100%;
+						}
+						.logo-nav-wrapper + section.grid:not(.article-content) {
+							width: 66.6667%;
+						}
+
+					aside.image {
+						float: right;
+						width: 25%;
+					}
 				}
 			</style>
 		<?php else: ?>
 			<style>
-				main, aside.image {
-					width: 100%;
-				}
-				main {
-					background: rgb(60,60,60);
+				@media (min-width: 701px) {
+					main, aside.image {
+						height: 100%;
+					}
+					main {
+						width: 22.5%;
+						box-shadow: 0px -5px 15px rgba(0,0,0,0.3);
+						position: absolute;
+						bottom: 0;
+						padding: 1.5em;
+					}
 
-					height: 35%;
-					box-shadow: 0px -5px 15px rgba(0,0,0,0.3);
-					z-index: 999;
-					position: absolute;
-					bottom: 0;
-					padding: 1.5em 0;
-				}
+					aside.image {
+						width: 77.5%;
+						background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
+						background-size: cover;
+						float: right;
+					}
 
-				aside.image {
-					height: 75%;
-					background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
-					background-size: cover;
+					.logo-nav-wrapper.grid {
+						width: 100%;
+					}
+						.logo-nav-wrapper .logo.grid,
+						.logo-nav-wrapper nav.grid {
+							width: 100%;
+						}
+						.logo-nav-wrapper + section.grid {
+							width: 100%;
+						}
 				}
 			</style>
 		<?php endif; ?>
