@@ -4,7 +4,7 @@
 
 /* Fonts and Ting
 ================================================== */
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Neuton:200,300,400,700,800,400italic|Raleway:400,900,100,200,300,500,600,700,800|Volkhov:400,700,400italic,700italic|Quando);
+@import url(http://fonts.googleapis.com/css?family=Neuton:200,300,400,700,800,400italic|Raleway:400,900,100,200,300,500,600,700,800);
 
 /* First, reset some default styles.
 ================================================== */
@@ -145,7 +145,7 @@ p, ul, ol, dl, blockquote {
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
-    letter-spacing: -.4em; /* Fixes spacing issues with display: inline-block; */
+    letter-spacing: -.5em; /* Fixes spacing issues with display: inline-block; */
   }
 
 
@@ -164,7 +164,7 @@ p, ul, ol, dl, blockquote {
   .container header:not(.grid),
   .container footer:not(.grid),
   .force-grid {
-    letter-spacing: -.4em;
+    letter-spacing: -.5em;
   }
   .container section:not(.grid) > *,
   .container aside:not(.grid) > *,
