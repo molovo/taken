@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
 }
 
-@media (min-width: 701px) {
+@media (min-width: 961px) {
 	html, body {
 		overflow: hidden;
 	}
@@ -82,7 +82,7 @@ li.image-wrapper.grid {
 	li.image-wrapper.grid .img-container {
 		background: black;
 		margin-bottom: 1.5em;
-		padding: 3em;
+		padding: 3em 0;
 		text-align: center;
 		border-radius: .25em;
 	}
@@ -99,6 +99,7 @@ li.image-wrapper.grid {
 		opacity: 0;
 		position: relative;
 		z-index: 999;
+		margin: 0 auto;
 	}
 	li.image-wrapper .img, li.image-wrapper .button {
 		-webkit-transition: opacity .25s ease-in-out;
@@ -123,7 +124,7 @@ main {
 	z-index: 999;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 960px) {
 	main, aside.image {
 		width: 100%;
 	}

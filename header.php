@@ -47,7 +47,7 @@
 
 		<?php if (current_url() == 'blog' || strstr(current_url(), 'category') || page_slug() == 'portfolio' || (is_article() && article_category() == 'Blogs')): ?>
 			<style>
-				@media (min-width: 701px) {
+				@media (min-width: 961px) {
 					main, aside.image {
 						height: 100%;
 					}
@@ -78,7 +78,7 @@
 			</style>
 		<?php else: ?>
 			<style>
-				@media (min-width: 701px) {
+				@media (min-width: 961px) {
 					main, aside.image {
 						height: 100%;
 					}
@@ -92,8 +92,6 @@
 
 					aside.image {
 						width: 77.5%;
-						background: url("<?php echo article_custom_field('image', theme_url('img/bg.jpg')); ?>") center no-repeat;
-						background-size: cover;
 						float: right;
 					}
 
