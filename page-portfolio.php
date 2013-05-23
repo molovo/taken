@@ -20,4 +20,4 @@
 		<h2><?php echo page_name(); ?></h2>
 	</div>
 
-<?php //theme_include('footer'); ?>
+<?php theme_include('footer'); ?>

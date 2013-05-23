@@ -41,3 +41,5 @@
 			<h2><?php echo ucwords(str_replace('category/', '', current_url())) ?></h2>
 		</div>
 	<?php //endif; ?>
+
+	<?php theme_include('footer'); ?>

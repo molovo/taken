@@ -44,6 +44,10 @@ nav#main a {
 
 .container {
 	height: 100%;
+	padding-bottom: 1.5em;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 section.page-content, section.posts, section.article-content {

@@ -12,4 +12,4 @@
 		</section>
 		<?php endif; ?>
 
-<?php //theme_include('footer'); ?>
+<?php theme_include('footer'); ?>
