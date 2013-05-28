@@ -84,7 +84,7 @@
 					}
 					main {
 						width: 22.5%;
-						box-shadow: 0px -5px 15px rgba(0,0,0,0.3);
+						box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
 						position: absolute;
 						bottom: 0;
 						padding: 1.5em 0;
